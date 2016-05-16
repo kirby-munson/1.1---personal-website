@@ -1,0 +1,33 @@
+html{
+  background-image: url('https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjMj46A-t7MAhUIVj4KHQrdCygQjRwIBw&url=http%3A%2F%2Fwww.sheknows.com%2Fpets-and-animals%2Farticles%2F992643%2F25-puppies-to-make-your-heart-melt&psig=AFQjCNH04uZovabW_jVKcDYiet5AuYXkjQ&ust=1463500400887757');;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size:cover;
+  background-size: cover;
+  color: green;
+}
+
+h1,
+h2{
+  text-align: center;
+}
+
+.nav-links{
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-link{
+  border: 2px solid red;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+}
+
+.nav-link a{
+  text-decoration: none;
+  color: red;
+}
