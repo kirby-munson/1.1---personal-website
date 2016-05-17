@@ -6,8 +6,48 @@
     <title>Super Heros</title>
   </head>
   <body>
-    <h1>Welcome, to SuperHero.com</h1>
+    <h1> Welcome to SuperHero.com!</h1>
+    <marquee onMouseover="this.scrollAmount=3" onMouseout="this.scrollAmount=6">Your headquarters for all things super!</marquee>
+
+
+  <!--  <div id="display">
+    <h1 id="text">Welcome, to SuperHero.com</h1>
     <h2>Your headquarters for all things super.</h2>
+   </div>
+
+<script>
+function marquee(a, b) {
+    var width = b.width();
+    var start_pos = a.width();
+    var end_pos = -width;
+
+    function scroll() {
+        if (b.position().left <= -width) {
+            b.css('left', start_pos);
+            scroll();
+        }
+        else {
+            time = (parseInt(b.position().left, 10) - end_pos) *
+                (10000 / (start_pos - end_pos)); // Increase or decrease speed by changing value 10000
+            b.animate({
+                'left': -width
+            }, time, 'linear', function() {
+                scroll();
+            });
+        }
+    }
+
+
+    b.css({
+        'width': width,
+        'left': start_pos
+    });
+    scroll(a, b);
+
+    $(document).ready(function() {
+    marquee($("display"), $("tex"));  //Enter name of container element & marquee element
+});
+    </script> -->
 
     <ul class="nav-links">
       <li class="nav-link"><a href="index.html">Home</a></li>
@@ -19,7 +59,7 @@
 
     <hr />
 
-    <p>Dreamcatcher. Scorpion power girl deacon frost hit-girl x-man offspring
+    <p class="info">Dreamcatcher. Scorpion power girl deacon frost hit-girl x-man offspring
       green arrow? Captain universe; angel montana tempest nova franklin "foggy"
       nelson! Augustus "gus" beezer boom boom black knight john stacy micah
       sanders. Sunspot geldoff hancock crimson dynamo, titanium man the ultimate
@@ -36,8 +76,10 @@
       venom franklin "foggy" nelson fountain! Quill sobek alex woolsly polaris
       captain epic elastigirl toad!</p>
 
-    <img src="https://pixabay.com/static/uploads/photo/2013/07/12/17/58/heroes-152707_960_720.png">
-    <script src="main.js"></script>
-
+      <img src="https://pixabay.com/static/uploads/photo/2013/07/12/17/58/heroes-152707_960_720.png">
+    
   </body>
+  <footer>
+    <img class="footer" src="http://www.netanimations.net/fire-under-construction-animation.gif">
+  </footer>
 </html>

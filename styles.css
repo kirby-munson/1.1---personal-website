@@ -1,3 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my CSS */
+
 html{
   background-image:url("https://d13yacurqjgara.cloudfront.net/users/35633/screenshots/1022639/dribbble_mathieubeaulieu_subway_background-02.png");
   -webkit-background-size: cover;
@@ -9,6 +60,9 @@ html{
 
 h1,
 h2{
+  font-size: 35px;
+  padding: 5px;
+  margin: 20px;
   text-align: center;
   color: white;
   font-family: comic sans ms;
@@ -34,11 +88,56 @@ h2{
   color: #595959;
 }
 
-p{
+ .info {
   padding: 30px;
-  margin: 30px;
+  margin: 10px;
   font-size: 18px;
-  font-family: helvetica; 
+  font-family: helvetica;
   color: white;
   background-color: rgba(45, 45, 45, .5);
 }
+
+.column {
+  padding-top: 0px;
+  margin-top: 0px;
+  height: 500px;
+}
+
+#image p{
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+}
+
+.content{
+  padding-top: 0px 0px 0px 0px;
+  margin-top: 3px;
+  vertical-align: top;
+}
+
+.footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.superman {
+  padding: 50px;
+  vertical-align: top;
+}
+/* #display{
+  background:hsla(210,100%,50%,1);
+  height:60px;
+  width:500px;
+  overflow:hidden;
+  position:relative;
+}
+#text{
+  background:hsla(90,100%,50%,.5);
+  cursor:pointer;
+  overflow:hidden;
+  position:absolute;
+  left:10px;
+  margin-right:10px;
+  top:10px;
+}
+*/
